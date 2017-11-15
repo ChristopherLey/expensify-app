@@ -10,10 +10,10 @@ import 'normalize.css/normalize.css';
 import "./styles/styles.scss";
 
 const store = configureStore();
-store.subscribe(() => {
-    const state = store.getState();
-    console.log(state);
-});
+// store.subscribe(() => {
+//     const state = store.getState();
+//     console.log(state);
+// });
 
 store.dispatch(addExpense({ description: 'Water bill', amount: 1500 }));
 store.dispatch(addExpense({ description: 'Gas bill', amount: 3000, createdAt: 1000}));
